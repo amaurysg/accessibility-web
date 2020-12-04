@@ -56,6 +56,20 @@ section {
   flex-direction: column;
   width: 100%;
 }
+.skip-link {
+  height: 0;
+}
+.skip-link:focus,
+.skip-link:active {
+  background: red;
+  border-radius: 5px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  height: auto;
+  margin: 16px 0;
+  padding: 8px;
+  text-decoration: none;
+}
 
 .header {
   color: var(--blanco);
@@ -128,6 +142,19 @@ nav {
   justify-content: space-around;
   margin: 32px auto 0;
   width: 20%;
+}
+.social-media li a {
+  font-family: var(--secondary-font);
+  color: var(--blanco);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+}
+.social-link {
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-right: 40px;
 }
 
 .carousel {
@@ -206,6 +233,10 @@ nav {
   display: flex;
   flex-direction: column;
   width: 30%;
+}
+.form-label {
+  color: var(--blanco);
+  font-family: var(--main-font);
 }
 
 .message-input input {
